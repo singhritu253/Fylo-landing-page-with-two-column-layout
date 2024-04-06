@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Karla:ital,wght@0,200..800;1,200..800&family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Karla:ital,wght@0,200..800;1,200..800&family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* ### Primary  */
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+
+    /* ### Accent  */
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+
+    /* ### Neutral  */
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+
+    /* font-family */
+    /* for header/nav/hedings */
+    --ffamily1: "Raleway", sans-serif;
+
+    /* for body contents */
+    --ffamily2: "Open Sans", sans-serif;
+
+    /* font-weights */
+    --fweight1: 400;
+    --fweight2: 700;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* genral styling */
+body {}
+
+header,
+main,
+footer {
+    width: 80vw;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--ffamily1);
+    color: var(--Very-Dark-Blue);
+    font-weight: var(--fweight2);
+}
+
+p {
+    font-size: 0.7rem;
+    color: var(--Very-Dark-Blue);
+    font-weight: var(--fweight2);
+    font-family: var(--ffamily2);
+    opacity: 80%;
+}
+
+input,
+button,
+nav,
+a,
+small {
+    font-family: var(--ffamily2);
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: none;
+    color: var(--Desaturated-Blue);
+    font-weight: var(--fweight2);
+}
+
+.header-data {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 2rem;
+}
+
+.header-data .content {
+    width: 50rem;
+    max-width: 100%;
+}
+
+.header-data .content p {
+    line-height: 1.3;
+    margin-top: 10px;
+}
+
+.header-data .content .login {
+    padding: 1rem 0;
+}
+
+input {
+    border-radius: 3px;
+    border: none;
+    border: 2px solid var(--Light-Gray);
+    font-size: 0.5rem;
+    padding: 8px 50px 8px 8px;
+    text-align: left;
+    opacity: 90%;
+}
+
+button a {
+    text-decoration: none;
+    color: var(--Light-Grayish-Blue);
+}
+
+.login {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    border: none;
+    font-size: 0.5rem;
+    padding: 8px 40px;
+    background-color: var(--Bright-Blue);
+    border-radius: 3px;
+}
+
+button:hover {
+    opacity: 70%;
+}
+
+.access-data button:hover {
+    opacity: 80%;
+    color: white;
+}
+
+main .main-data {
+    background-image: url(images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--Light-Grayish-Blue);
+    display: flex;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.img {
+    width: 90%;
+}
+
+.main-data .content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    justify-content: center;
+    background-color: var(--Light-Grayish-Blue);
+    padding: 1rem 2rem;
+}
+
+.span {
+    display: flex;
+    gap: 3px;
+    text-decoration: underline var(--Moderate-Cyan);
+}
+
+.span p {
+    color: var(--Moderate-Cyan);
+}
+
+.user-info {
+    background-color: rgba(255, 255, 255, 0.832);
+    border-radius: 3px;
+    box-shadow: 1px 3px 4px 0px rgba(240, 248, 255, 0.778);
+    padding: 1rem;
+    width: 70%;
+}
+
+.user-info p:nth-child(2) {
+    line-height: 1.6;
+    margin-top: 8px;
+}
+
+.kyle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 0;
+}
+
+.kyle img {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.name p,
+small {
+    font-size: 0.7rem;
+    font-weight: var(--fweight2);
+}
+
+.access-data {
+    background-color: var(--Desaturated-Blue);
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.access-data .content {
+    width: 25rem;
+    max-width: 100%;
+    color: var(--Light-Grayish-Blue);
+}
+
+.access-data .content p,
+h3 {
+    color: var(--Light-Grayish-Blue);
+    margin: 10px;
+}
+
+.access-data .content p {
+    line-height: 1.6;
+}
+
+.access-data .login {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+
+}
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.box1 .logo {
+    width: 80px;
+}
+
+.box2,
+.box3 {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.box4 {
+    color: var(--Light-Grayish-Blue);
+    align-self: center;
+
+}
+
+.box2,
+.box3 {
+    align-self: flex-end;
+}
+
+footer .contact {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+footer .contact img {
+    width: 10px;
+    height: 10px;
+}
+
+footer p {
+    color: var(--Light-Grayish-Blue);
+    font-size: 0.7rem;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--Light-Grayish-Blue);
+    cursor: pointer;
+    font-size: 0.7rem;
+}
+
+/* media-query for screen */
+@media (max-width:768px) {
+
+
+    header input,
+    button {
+        width: 40%;
+    }
+
+    header .login {
+        align-items: center;
+    }
+
+    header,
+    main,
+    footer {
+        width: 100%;
+    }
+
+    .header-data {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .login,
+    .access-data {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-data {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    article p:nth-child(2),p:nth-child(3){
+        text-align: left;
+    }
+
+    .main-data .user-info,
+    .span {
+        margin: auto;
+    }
+
+    .user-info {
+        align-items: center;
+        width: 78%;
+    }
+
+    .access-data button {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .box1{
+        margin: 1rem;
+        gap: 10px;
+    }
+
+    .box2,
+    .box3 {
+        margin: 1rem;
+        align-self: flex-start;
+
+    }
+
+    .box4 {
+        align-self: center;
+        margin: 1rem;
+    }
+
+}
+
+@media (max-width:444px){
+    .user-info{
+        width: 100%;
+    }
+}
+
+@media (max-width:486px) {
+    .main-header img {
+        width: 55px;
+        height: 20px;
+    }
+
+    nav a {
+        font-size: 0.7rem;
+    }
+
+
+    header input,
+    button {
+        width: 60%;
+    }
+}
+
+@media (max-width:302px) {
+    .main-header img {
+        width: 40px;
+        height: 10px;
+    }
+
+    nav a {
+        font-size: 0.5rem;
+    }
+
+    header input,
+    button {
+        width: 70%;
+    }
+}
